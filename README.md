@@ -1,3 +1,3 @@
 # Todo List
 
-> - [Live Demo]() :shipit:
+> - [Live Demo](https://igorashs.github.io/react-bend-todo-list) :shipit:
