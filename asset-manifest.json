@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/react-bend-todo-list/static/css/main.93ac33e4.chunk.css",
-    "main.js": "/react-bend-todo-list/static/js/main.b12f6e71.chunk.js",
-    "main.js.map": "/react-bend-todo-list/static/js/main.b12f6e71.chunk.js.map",
+    "main.js": "/react-bend-todo-list/static/js/main.38441f41.chunk.js",
+    "main.js.map": "/react-bend-todo-list/static/js/main.38441f41.chunk.js.map",
     "runtime-main.js": "/react-bend-todo-list/static/js/runtime-main.b566351a.js",
     "runtime-main.js.map": "/react-bend-todo-list/static/js/runtime-main.b566351a.js.map",
-    "static/js/2.51d5594c.chunk.js": "/react-bend-todo-list/static/js/2.51d5594c.chunk.js",
-    "static/js/2.51d5594c.chunk.js.map": "/react-bend-todo-list/static/js/2.51d5594c.chunk.js.map",
+    "static/js/2.6e4db96a.chunk.js": "/react-bend-todo-list/static/js/2.6e4db96a.chunk.js",
+    "static/js/2.6e4db96a.chunk.js.map": "/react-bend-todo-list/static/js/2.6e4db96a.chunk.js.map",
     "index.html": "/react-bend-todo-list/index.html",
     "static/css/main.93ac33e4.chunk.css.map": "/react-bend-todo-list/static/css/main.93ac33e4.chunk.css.map",
-    "static/js/2.51d5594c.chunk.js.LICENSE.txt": "/react-bend-todo-list/static/js/2.51d5594c.chunk.js.LICENSE.txt",
+    "static/js/2.6e4db96a.chunk.js.LICENSE.txt": "/react-bend-todo-list/static/js/2.6e4db96a.chunk.js.LICENSE.txt",
     "static/media/checked.e532a07c.svg": "/react-bend-todo-list/static/media/checked.e532a07c.svg",
     "static/media/remove.1a51826e.svg": "/react-bend-todo-list/static/media/remove.1a51826e.svg",
     "static/media/unchecked.2649db5c.svg": "/react-bend-todo-list/static/media/unchecked.2649db5c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.b566351a.js",
-    "static/js/2.51d5594c.chunk.js",
+    "static/js/2.6e4db96a.chunk.js",
     "static/css/main.93ac33e4.chunk.css",
-    "static/js/main.b12f6e71.chunk.js"
+    "static/js/main.38441f41.chunk.js"
   ]
 }
