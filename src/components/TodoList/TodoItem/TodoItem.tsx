@@ -1,6 +1,7 @@
-import { useTodos } from 'todo-context';
 import { Todo } from 'types';
 import styled from 'styled-components';
+import { useDispatch } from 'react-redux';
+import { removeTodo, toggleTodo } from 'todoSlice';
 import { Checkbox, RemoveButton } from './Button/Button';
 
 type TodoItemProps = {
@@ -44,18 +45,16 @@ const TodoValue = styled.p<TodoValueProps>`
 `;
 
 const TodoItem = ({ todo }: TodoItemProps) => {
-  const { dispatch } = useTodos();
+  const dispatch = useDispatch();
 
   return (
     <Container>
       <Checkbox
         checked={todo.isCompleted}
-        onChange={() => dispatch({ type: 'toggle-todo', id: todo.id })}
+        onChange={() => dispatch(toggleTodo({ id: todo.id }))}
       />
       <TodoValue completed={todo.isCompleted}>{todo.value}</TodoValue>
-      <RemoveButton
-        onClick={() => dispatch({ type: 'remove-todo', id: todo.id })}
-      />
+      <RemoveButton onClick={() => dispatch(removeTodo({ id: todo.id }))} />
     </Container>
   );
 };

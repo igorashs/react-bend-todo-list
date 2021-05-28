@@ -1,6 +1,7 @@
 import { useRef } from 'react';
+import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
-import { useTodos } from 'todo-context';
+import { addTodo } from 'todoSlice';
 
 const StyledForm = styled.form`
   display: flex;
@@ -24,7 +25,8 @@ const StyledInput = styled.input`
 `;
 
 const TodoForm = () => {
-  const { dispatch } = useTodos();
+  const dispatch = useDispatch();
+
   const inputEl = useRef<HTMLInputElement>(null);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -32,14 +34,15 @@ const TodoForm = () => {
 
     if (!inputEl.current || !inputEl.current.value) return;
 
-    dispatch({
-      type: 'add-todo',
-      todo: {
-        id: new Date().getTime().toString(),
-        isCompleted: false,
-        value: inputEl.current.value,
-      },
-    });
+    dispatch(
+      addTodo({
+        todo: {
+          id: new Date().getTime().toString(),
+          isCompleted: false,
+          value: inputEl.current.value,
+        },
+      }),
+    );
 
     inputEl.current.value = '';
   };

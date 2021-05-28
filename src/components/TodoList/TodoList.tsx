@@ -1,5 +1,6 @@
+import { useSelector } from 'react-redux';
 import styled from 'styled-components';
-import { useTodos } from 'todo-context';
+import { todosSelector, totalSelector } from 'todoSlice';
 import TodoItem from './TodoItem';
 
 const TotalItems = styled.p`
@@ -13,9 +14,8 @@ const TotalItems = styled.p`
 `;
 
 const TodoList = () => {
-  const {
-    state: { todos, total },
-  } = useTodos();
+  const todos = useSelector(todosSelector);
+  const total = useSelector(totalSelector);
 
   if (todos)
     return (

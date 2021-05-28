@@ -1,7 +1,8 @@
-import { TodosProvider } from 'todo-context';
+import { Provider } from 'react-redux';
 import Header from 'components/Header';
 import TodoList from 'components/TodoList';
 import styled from 'styled-components';
+import store from 'store';
 import TodoForm from './components/TodoForm';
 
 const Container = styled.div`
@@ -13,12 +14,12 @@ function App() {
   return (
     <div>
       <Header />
-      <TodosProvider>
+      <Provider store={store}>
         <Container>
           <TodoForm />
           <TodoList />
         </Container>
-      </TodosProvider>
+      </Provider>
     </div>
   );
 }
